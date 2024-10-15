@@ -14,7 +14,16 @@
   
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Notify - Notification Service
+
+Notify is a service that provides APIs for sending notifications such as emails, built with the NestJS framework.
+
+### Features:
+
+- Sends email notifications with customizable templates.
+- Supports multiple languages using the Polyglot library.
+- API documentation available via Swagger UI.
+- Handlebars used for dynamic email templates.
 
 ## Installation
 

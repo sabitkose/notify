@@ -1,0 +1,22 @@
+{{#> layout}}
+
+<div class="container">
+    <h1>{{t 'welcome'}}, {{name}}!</h1>
+    <p>We're thrilled to have you on board. Here are some details about your account:</p>
+    <ul class="info-list">
+        <li><strong>{{t 'name'}}:</strong> {{name}} {{lastname}}</li>
+        <li><strong>{{t 'email'}}:</strong> {{email}}</li>
+        <li><strong>{{t 'membership_date'}}:</strong> {{membership_date}}</li>
+        <li><strong>{{t 'documents'}}:</strong>
+            <ul>
+                {{#each documents}}
+                <li><a href="{{this.url}}">{{this.name}}</a></li>
+                {{/each}}
+            </ul>
+        </li>
+    </ul>
+    <p>Click the button below to get started:</p>
+    <a href="#" class="button">Explore Now</a>
+</div>
+
+{{/layout}}
